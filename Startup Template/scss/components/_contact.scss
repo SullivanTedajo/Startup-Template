@@ -1,0 +1,64 @@
+@forward '../globals';
+@forward '../util';
+
+.contact{
+    background-color: var(--light-gray);
+    padding: 7em 2em;
+
+    &__section-title{
+        @extend %section-title;
+     }
+     &__section-description{
+        @extend %section-description;
+     }
+
+     &__item{
+        font-size: 1em;
+        margin-bottom: 1.5em;
+     }
+
+     &__icon{
+        font-size: 2.2em;
+        padding-right: 1.1em;
+     }
+
+
+     &__form{
+        margin-bottom: 3em;
+     }
+
+     &__form-control{
+        @extend %form-control;
+
+     }
+
+     &__form-control-message{
+        @extend %form-control;
+        resize: none;
+     }
+
+     &__button{
+        padding: 1em;
+        background-color: var(--black-color);
+        color: var(--white-color);
+        text-transform: uppercase;
+        font-size: .8em;
+        border: none;
+        &:hover{
+         cursor: pointer;
+         background-color: var(--gray-color);
+        }
+
+     }
+
+     &__submit-icon{
+        padding-right: .5em;
+        
+     }
+
+     &__image{
+      object-fit: cover;
+     }
+
+    
+}

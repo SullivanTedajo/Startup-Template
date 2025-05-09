@@ -1,0 +1,50 @@
+@forward '../globals';
+@forward '../util';
+
+// MOBILE FIRST 
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 999;
+    background-color: var(--white-color);
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    // padding: 1em .8em;
+    display: flex;
+    justify-content: space-between;
+
+    &__logo{
+        @extend %menu-style;
+    }
+
+    &__navigation{
+        display: flex;
+        justify-content: space-between;
+        gap: 1em;
+
+
+    }
+    &__link-item {
+        @extend %menu-style;
+    }
+
+   
+}
+
+// RESPONSIVE 
+
+@media only screen and (max-width: 37.5em) {
+    .header{
+        // &__link-item{
+        //     font-size: .5em;
+        // }
+        &__icon{
+            display: none;
+        }
+       
+
+    }
+}
+
+

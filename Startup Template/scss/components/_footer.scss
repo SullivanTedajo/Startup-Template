@@ -1,0 +1,37 @@
+@forward '../globals';
+@forward '../util';
+
+.footer{
+    background-color: var(--black-color);
+    color: var(--white-color);
+    padding: 3em 1em;
+    text-align: center;
+
+    &__top-button{
+        font-size: 1em;
+        background-color: var(--light-gray);
+        padding: .8em;
+        text-decoration: none;                                                                  
+        color: var(--black-color);
+        margin-bottom: 2.5em;
+        &:hover{
+            background-color: var(--heavy-gray);
+            color: var(--white-color);
+        }
+    }
+
+    &__socials{
+        font-size: 1em;
+        padding-right: .7em;
+        margin-block: 1.3em;
+    }
+
+    &__copyright{
+        text-decoration: none;
+     }
+
+     &__link{
+        // text-decoration: none;
+        color: var(--white-color);
+     }
+}

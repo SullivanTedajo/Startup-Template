@@ -1,0 +1,76 @@
+@forward '../globals';
+// MOBILE FIRST 
+
+.hero{
+    background: center / cover no-repeat url("../img/hero-mac.jpg");
+    padding: 2.5em;
+    height: 95vh;
+    position: relative;
+
+    &__container{
+        position: absolute;
+        top: 35%;
+
+        // margin-block: 3em;
+    }
+
+    &__title{
+        color: var(--white-color);
+        font: {
+            size: 2.5em;
+            weight: 500;
+        }
+        margin-bottom: 1em;
+        line-height: 1.1;
+
+    }
+
+    &__description{
+        color: var(--white-color);
+        font: {
+            size: 1.2em;
+            weight: 500;
+        }
+        margin-bottom: 2.5em;
+    }
+
+    &__link{
+        background-color: var(--gray-color);
+        padding: 1em;
+        font: {
+            size: 1.1em;
+            weight: 200;
+        }
+        text: {
+            decoration: none;
+        }
+        color: var(--black-color);
+
+        &:hover{
+            background-color: var(--light-gray);
+        }
+    }
+
+    &__socials{
+        position: absolute;
+        bottom: 5%;
+
+    }
+
+    &__icon{
+        color: var(--gray-color);
+        font: {
+            size: 1em;
+        }
+    }
+}
+
+// RESPONSIVE 
+
+@media only screen and (min-width: 37.5em) {
+    .hero{
+        &__title{
+            font-size: 4em;
+        }
+    }
+}

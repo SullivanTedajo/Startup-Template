@@ -1,0 +1,37 @@
+@forward '../globals';
+@forward '../util';
+
+// MOBILE FIRST 
+
+.work{
+    background-color: var(--white-color);
+    padding: 4em 2em;
+
+    &__section-title{
+        @extend %section-title;
+     }
+     &__section-description{
+        @extend %section-description;
+     }
+
+     &__portfolio-item{
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+     }
+}
+
+// RESPONSIVE 
+
+@media only screen and (min-width: 37.5em) {
+    .work{
+
+        &__portfolio{
+            padding: 8em 2em;
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 1em;
+        }
+        
+    }
+}

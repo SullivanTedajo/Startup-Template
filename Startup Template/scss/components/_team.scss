@@ -1,0 +1,72 @@
+@forward '../globals';
+@forward '../util';
+
+// MOBILE FIRST 
+.team {
+    background-color: var(--white-color);
+    padding: 4em 2em;
+
+    &__section-title{
+        @extend %section-title;
+     }
+     &__section-description{
+        @extend %section-description;
+     }
+
+     &__member{
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        margin-bottom: 1.5em;
+     }
+
+     &__member-image{
+        width: 100%;
+        height: 50%;
+        filter: grayscale(50%);
+     }
+
+     &__card-body{
+        padding: 1.2em;
+        padding-bottom: 1.5em;
+     }
+     &__name{
+        font-size: 1.5em;
+        font-weight: 400;
+        text-transform: capitalize;
+        margin-bottom: 1.2em;
+     }
+     &__title{
+        font-size: 1em;
+        opacity: .4;
+        margin-bottom: 1em;
+     }
+     &__member-description{
+        text-align: left;
+     }
+     &__button{
+        font-size: 1.1em;
+        width: 100%;
+        padding: .7em;
+        background-color: var(--light-gray);
+        border: none;
+        margin-bottom: 1.5em;
+
+        &:hover{
+            background-color: var(--gray-color);
+            cursor: pointer;
+        }
+     }
+}
+
+// RESPONSIVE 
+
+@media only screen and (min-width: 37.5em) {
+    .team{
+        padding: 8em 2em;
+        &__members{
+            margin-top: 4em;
+            display: flex;
+            gap: 1em;
+            justify-content: space-between;
+        }
+    }
+}

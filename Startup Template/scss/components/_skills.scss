@@ -1,0 +1,73 @@
+@forward '../globals';
+@forward '../util';
+
+// MOBILE FIRST 
+
+.skills{
+    background-color: var(--light-gray);
+    padding: 4em 2em;
+
+    &__section-title{
+        @extend %section-title;
+        text: {
+         transform: none;
+         align: left;
+        }
+     }
+     &__section-description{
+        @extend %section-description;
+        text-align: left;
+         margin-bottom: 2em;
+         width: auto;
+     }
+
+     &__item{
+        margin-bottom: 1em;
+     }
+
+     &__title{
+        font-size: 1.2em;
+        font-weight: 400;
+        display: block;
+        margin-bottom: .8em;
+     }
+     &__icon{
+        padding-right: 1em;
+     }
+
+     &__percentage-block{
+        width: 100%;
+        background-color: var(--gray-color);
+        padding: 0;
+     }
+     &__percentage-photography{
+        @extend %skill-percentage;
+        
+     }
+     &__percentage-web{
+        @extend %skill-percentage;
+        width: 85%;
+        
+     }
+     &__percentage-photoshop{
+        @extend %skill-percentage;
+        width: 75%;
+        
+     }
+}
+
+// RESPONSIVE 
+
+@media only screen and (min-width: 37.5em) {
+    .skills{
+        display: flex;
+        justify-content: space-between;
+
+        &__right-content{
+            width: 50%;
+        }
+        &__section-description{
+         width: 60ch;
+     }
+    }
+}

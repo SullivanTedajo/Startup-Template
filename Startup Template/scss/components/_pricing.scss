@@ -1,0 +1,104 @@
+@forward '../globals';
+@forward '../util';
+
+.pricing{
+    background-color: var(--heavy-gray);
+    color: var(--white-color);
+    padding: 4em 2em;
+
+    &__section-title{
+        @extend %section-title;
+     }
+     &__section-description{
+        @extend %section-description;
+     }
+
+
+     &__item{
+        margin-bottom: 1.8em;
+     }
+     &__item-title{
+        @extend %pricing-title;
+     }
+
+     &__item-title-pro{
+        @extend %pricing-title;
+        padding: 2.5em;
+        margin-top: -.8em;
+        background-color: var(--pink-color);
+     }
+
+     &__item-feature{
+        text-align: center;
+        color: var(--black-color);
+        background-color: var(--white-color);
+        font: {
+            size: 1em;
+            weight: 300;
+        }
+        padding: 1.2em;
+        border-bottom: .08em solid #00000011;
+     }
+
+     &__feature-bold{
+        font: {
+            weight: 600;
+        }
+     }
+
+     &__feature-price{
+        display: block;
+        font: {
+            size: 1.8em;
+        }
+        margin-bottom: .7em;
+     }
+
+     &__feature-duration{
+        opacity: 0.5;
+     }
+
+     &__item-button{
+        padding: 1.3em;
+        background-color: var(--light-gray);
+        text-align: center;
+    }
+
+     &__signup{
+        font-size: 1em;
+        color: var(--white-color);
+        background-color: var(--black-color);
+        padding: 1.1em;
+        border: none;
+
+        &:hover{
+            cursor: pointer;
+            background-color: var(--gray-color);
+        }
+     }
+
+
+}
+
+// RESPONSIVE 
+
+@media only screen and (min-width: 37.5em) {
+    .pricing{
+
+    padding: 8em 2em;
+
+
+        &__items{
+            display: flex;
+            justify-content: space-between;
+            gap: .8em;
+            margin-top: 4em;
+
+        }
+
+        &__item{
+            width: 100%;
+        }
+
+    }
+}

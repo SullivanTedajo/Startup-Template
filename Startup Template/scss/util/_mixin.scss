@@ -1,0 +1,72 @@
+@forward '../globals';
+
+%menu-style {
+    padding: 1.2em;
+    font: {
+        size: .9em;
+        weight: 400;
+    }
+    text: {
+        transform: uppercase;
+        decoration: none;
+    }
+    color: var(--black-color);
+    
+    &:hover{
+        background-color: var(--gray-color);
+    }
+}
+
+%section-title{
+    font: {
+        size: 1.4em;
+        weight: 400;
+    }
+    text: {
+        transform: uppercase;
+        align: center;
+    }
+}
+
+%section-description{
+    font: {
+        size: 1em;
+        weight: 300;
+    }
+    text: {
+        align: center;
+    }
+}
+
+%skill-percentage {
+    font: {
+        size: 1em;
+        weight: 400;
+    }
+    color: var(--white-color);
+    display: inline-block;
+    text-align: center;
+    padding: .1em;
+    margin: 0;
+    height: 100%;
+    width: 90%;
+    background-color: var(--heavy-gray);
+}
+
+%pricing-title{
+    text-transform: capitalize;
+    text-align: center;
+    font-size: 1.3em;
+    font-weight: 400;
+    background-color: var(--black-color);
+    padding: 1.5em;
+    margin: 0;
+}
+
+%form-control{
+    border: .081em solid #00000031;
+    padding: 1.1em .8em;
+    width: 100%;
+    margin-bottom: 1em;
+    font-size: .85em;
+}
